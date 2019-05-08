@@ -140,7 +140,7 @@ public class AppTest {
 
     // Fourth case: Password field is filled and email field is blank
     @Test
-    public void passwordOverfilledCase() {
+    public void passwordOnlyfilledCase() {
         //Entering value to password only
         try {
             //Email field
@@ -168,7 +168,7 @@ public class AppTest {
         try {
             //Email field entered with wrong value
             WebElement emailField = driver.findElement(By.id("developer_email"));
-            emailField.sendKeys("mennafortting@gmail.com");
+            emailField.sendKeys("mennaforting@gmail.com");
 
             //Password field entered with wrong value
             WebElement PasswordField = driver.findElement(By.id("password"));
@@ -186,11 +186,139 @@ public class AppTest {
         //Asserting on error message returns in case of any wrong credentials
         try {
             //Wait time till error message appears
-            WebDriverWait wait = new WebDriverWait(driver, 2);
+            WebDriverWait wait = new WebDriverWait(driver, 5);
             wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div[@ng-show='developerLoginVm.invalidMessage']/p")));
 
             WebElement wrongCredErrorMsg = driver.findElement(By.xpath("//div[@ng-show='developerLoginVm.invalidMessage']/p"));
             assertTrue(wrongCredErrorMsg.isDisplayed());
+        }
+        catch (TimeoutException e) {
+            System.out.println("TimeOut");
+            fail();
+        }
+    }
+
+    //Sixth case: Verifying 'Forget password?' link
+    @Test
+    public void forgetPasswordCase() {
+        //Checking existence of 'Forget password?' link
+        try {
+            WebElement forgetPasswordLink = driver.findElement(By.xpath("//a[@href='/forgot']"));
+            forgetPasswordLink.click();
+            WebDriverWait wait = new WebDriverWait(driver, 2);
+            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("div.u-text--center.u-color-ink-0.u-bottom-margin--6x > div.u-font--xlarge.u-font--semibold")));
+            WebElement forgetPasswordPage = driver.findElement(By.cssSelector("div.u-text--center.u-color-ink-0.u-bottom-margin--6x > div.u-font--xlarge.u-font--semibold"));
+            assertTrue(forgetPasswordPage.isDisplayed());
+        }
+        catch (NoSuchElementException e) {
+            fail();
+        }
+    }
+
+    //Seventh case: Verifying 'Sign up' link
+    @Test
+    public void signUpCase() {
+        //Checking existence of 'Sign up' link
+        try {
+            WebElement signUpLink = driver.findElement(By.xpath("//a[@href='/signup']"));
+            signUpLink.click();
+            WebDriverWait wait = new WebDriverWait(driver, 2);
+            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("div.u-text--center.u-color-ink-0 > div.u-font--xlarge.u-font--semibold")));
+            WebElement forgetPasswordPage = driver.findElement(By.cssSelector("div.u-text--center.u-color-ink-0 > div.u-font--xlarge.u-font--semibold"));
+            assertTrue(forgetPasswordPage.isDisplayed());
+        }
+        catch (NoSuchElementException e) {
+            fail();
+        }
+    }
+
+    //Eighth case: Invalid mail format
+    @Test
+    public void invalidEmailCase() {
+
+        WebElement emailField = driver.findElement(By.id("developer_email"));
+        emailField.sendKeys("metest.com");
+
+
+        WebElement PasswordField = driver.findElement(By.id("password"));
+        PasswordField.sendKeys("menna_1991");
+        assertTrue(PasswordField.isDisplayed());
+
+        WebElement loginButton = driver.findElement(By.xpath("//*[@class='c-button c-button--info c-button--block c-button--xlarge u-bottom-margin--1x']"));
+        loginButton.click();
+
+        //Asserting on invalid mail error
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, 2);
+            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("div.u-bottom-margin--3x > form > div:nth-child(2) > p")));
+            WebElement emailFieldError = driver.findElement(By.cssSelector("div.u-bottom-margin--3x > form > div:nth-child(2) > p"));
+            assertTrue(emailFieldError.isDisplayed());
+
+        } catch (TimeoutException e) {
+            System.out.println("TimeOut");
+            fail();
+        }
+
+    }
+
+    //Ninth case: Short password used
+    @Test
+    public void shortPasswordCase() {
+
+        WebElement emailField = driver.findElement(By.id("developer_email"));
+        emailField.sendKeys("mennafortesting@gmail.com");
+
+
+        WebElement PasswordField = driver.findElement(By.id("password"));
+        PasswordField.sendKeys("menn");
+        assertTrue(PasswordField.isDisplayed());
+        emailField.click();
+
+        WebElement loginButton = driver.findElement(By.xpath("//*[@class='c-button c-button--info c-button--block c-button--xlarge u-bottom-margin--1x']"));
+        assertFalse(loginButton.isEnabled());
+
+        //Asserting on error from short password
+        try {
+
+            WebDriverWait wait = new WebDriverWait(driver, 5);
+            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("div.u-bottom-margin--3x > form > div:nth-child(4) > p")));
+            WebElement passwordFieldError = driver.findElement(By.cssSelector("div.u-bottom-margin--3x > form > div:nth-child(4) > p"));
+            assertTrue(passwordFieldError.isDisplayed());
+
+        }
+        catch (TimeoutException e) {
+            System.out.println("TimeOut");
+            fail();
+        }
+    }
+
+    // Tenth case: Special characters used in fields
+    @Test
+    public void specialCharsCase() {
+
+        WebElement emailField = driver.findElement(By.id("developer_email"));
+        emailField.sendKeys("!@#$%^%$");
+        assertTrue(emailField.isDisplayed());
+
+
+        WebElement PasswordField = driver.findElement(By.id("password"));
+        PasswordField.sendKeys("!@@");
+        assertTrue(PasswordField.isDisplayed());
+        emailField.click();
+
+        WebElement loginButton = driver.findElement(By.xpath("//*[@class='c-button c-button--info c-button--block c-button--xlarge u-bottom-margin--1x']"));
+        assertFalse(loginButton.isEnabled());
+
+        //Asserting for the errors
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, 5);
+            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("div.u-bottom-margin--3x > form > div:nth-child(2) > p")));
+            WebElement emailFieldError = driver.findElement(By.cssSelector("div.u-bottom-margin--3x > form > div:nth-child(2) > p"));
+            assertTrue(emailFieldError.isDisplayed());
+
+            WebElement passwordFieldError = driver.findElement(By.cssSelector("div.u-bottom-margin--3x > form > div:nth-child(4) > p"));
+            assertTrue(passwordFieldError.isDisplayed());
+
         }
         catch (TimeoutException e) {
             System.out.println("TimeOut");

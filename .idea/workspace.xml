@@ -26,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/instabug/AppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="185" column="77" lean-forward="true" selection-start-line="185" selection-start-column="77" selection-end-line="185" selection-end-column="77" />
+            <state relative-caret-position="1020">
+              <caret line="296" column="25" lean-forward="true" selection-start-line="296" selection-start-column="25" selection-end-line="296" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#setupTestExec#0;class#AppTest#0" />
@@ -35,6 +35,12 @@
                 <element signature="method#blankFieldsCase#0;class#AppTest#0" />
                 <element signature="method#emailOnlyfilledCase#0;class#AppTest#0" />
                 <element signature="method#passwordOverfilledCase#0;class#AppTest#0" />
+                <element signature="method#wrongCredentialsCase#0;class#AppTest#0" />
+                <element signature="method#forgetPasswordCase#0;class#AppTest#0" />
+                <element signature="method#forgetPasswordCase#1;class#AppTest#0" />
+                <element signature="method#invalidEmailCase#0;class#AppTest#0" />
+                <element signature="method#shortPasswordCase#0;class#AppTest#0" />
+                <element signature="method#invalidCase#0;class#AppTest#0" />
               </folding>
             </state>
           </provider>
@@ -107,7 +113,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557344422955" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557358779210" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -123,7 +129,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AppTest.wrongCredentialsCase">
+  <component name="RunManager" selected="JUnit.AppTest.specialCharsCase">
     <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="InstaTask" />
       <extension name="coverage">
@@ -139,7 +145,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.blankFieldsCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppTest.invalidEmailCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="InstaTask" />
       <extension name="coverage">
         <pattern>
@@ -149,13 +155,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.instabug" />
       <option name="MAIN_CLASS_NAME" value="com.instabug.AppTest" />
-      <option name="METHOD_NAME" value="blankFieldsCase" />
+      <option name="METHOD_NAME" value="invalidEmailCase" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.emailOnlyEnteredCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppTest.specialCharsCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="InstaTask" />
       <extension name="coverage">
         <pattern>
@@ -165,13 +171,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.instabug" />
       <option name="MAIN_CLASS_NAME" value="com.instabug.AppTest" />
-      <option name="METHOD_NAME" value="emailOnlyEnteredCase" />
+      <option name="METHOD_NAME" value="specialCharsCase" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.passwordOverfilledCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppTest.successFullLoginWithCredentialsCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="InstaTask" />
       <extension name="coverage">
         <pattern>
@@ -181,7 +187,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.instabug" />
       <option name="MAIN_CLASS_NAME" value="com.instabug.AppTest" />
-      <option name="METHOD_NAME" value="passwordOverfilledCase" />
+      <option name="METHOD_NAME" value="successFullLoginWithCredentialsCase" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -205,11 +211,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AppTest.wrongCredentialsCase" />
+        <item itemvalue="JUnit.AppTest.specialCharsCase" />
         <item itemvalue="JUnit.AppTest" />
-        <item itemvalue="JUnit.AppTest.passwordOverfilledCase" />
-        <item itemvalue="JUnit.AppTest.emailOnlyEnteredCase" />
-        <item itemvalue="JUnit.AppTest.blankFieldsCase" />
+        <item itemvalue="JUnit.AppTest.invalidEmailCase" />
+        <item itemvalue="JUnit.AppTest.successFullLoginWithCredentialsCase" />
+        <item itemvalue="JUnit.AppTest.wrongCredentialsCase" />
       </list>
     </recent_temporary>
   </component>
@@ -223,44 +229,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557327199164</updated>
-      <workItem from="1557327203391" duration="5844000" />
+      <workItem from="1557327203391" duration="11969000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppTest_blankFieldsCase - 2019.05.08 at 20h 47m 11s.xml">
-      <configuration name="AppTest.blankFieldsCase" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_blankFieldsCase - 2019.05.08 at 20h 50m 24s.xml">
-      <configuration name="AppTest.blankFieldsCase" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_emailOnlyEnteredCase - 2019.05.08 at 21h 14m 54s.xml">
-      <configuration name="AppTest.emailOnlyEnteredCase" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_passwordOverfilledCase - 2019.05.08 at 21h 16m 59s.xml">
-      <configuration name="AppTest.passwordOverfilledCase" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_wrongCredentialsCase - 2019.05.08 at 21h 23m 07s.xml">
-      <configuration name="AppTest.wrongCredentialsCase" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_wrongCredentialsCase - 2019.05.08 at 21h 25m 12s.xml">
-      <configuration name="AppTest.wrongCredentialsCase" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_wrongCredentialsCase - 2019.05.08 at 21h 26m 42s.xml">
-      <configuration name="AppTest.wrongCredentialsCase" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_wrongCredentialsCase - 2019.05.08 at 21h 29m 33s.xml">
-      <configuration name="AppTest.wrongCredentialsCase" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest - 2019.05.08 at 21h 35m 13s.xml">
+    <history-entry file="AppTest - 2019.05.08 at 22h 45m 51s.xml">
       <configuration name="AppTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_wrongCredentialsCase - 2019.05.08 at 21h 36m 45s.xml">
+    <history-entry file="AppTest_wrongCredentialsCase - 2019.05.08 at 22h 48m 14s.xml">
       <configuration name="AppTest.wrongCredentialsCase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_wrongCredentialsCase - 2019.05.08 at 22h 50m 57s.xml">
+      <configuration name="AppTest.wrongCredentialsCase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_successFullLoginWithCredentialsCase - 2019.05.08 at 22h 53m 19s.xml">
+      <configuration name="AppTest.successFullLoginWithCredentialsCase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_successFullLoginWithCredentialsCase - 2019.05.08 at 22h 57m 18s.xml">
+      <configuration name="AppTest.successFullLoginWithCredentialsCase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_successFullLoginWithCredentialsCase - 2019.05.08 at 23h 00m 33s.xml">
+      <configuration name="AppTest.successFullLoginWithCredentialsCase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest - 2019.05.08 at 23h 09m 00s.xml">
+      <configuration name="AppTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_invalidEmailCase - 2019.05.08 at 23h 32m 03s.xml">
+      <configuration name="AppTest.invalidEmailCase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest - 2019.05.09 at 01h 26m 01s.xml">
+      <configuration name="AppTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_specialCharsCase - 2019.05.09 at 01h 38m 02s.xml">
+      <configuration name="AppTest.specialCharsCase" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5844000" />
+    <option name="totallyTimeSpent" value="11969000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="945" extended-state="0" />
@@ -300,20 +306,6 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/com/instabug/AppTest.java</url>
-          <line>166</line>
-          <properties class="com.instabug.AppTest" method="wrongCredentialsCase">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -322,10 +314,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/instabug/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="185" column="77" lean-forward="true" selection-start-line="185" selection-start-column="77" selection-end-line="185" selection-end-column="77" />
+        <state relative-caret-position="1020">
+          <caret line="296" column="25" lean-forward="true" selection-start-line="296" selection-start-column="25" selection-end-line="296" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#setupTestExec#0;class#AppTest#0" />
@@ -333,6 +332,12 @@
             <element signature="method#blankFieldsCase#0;class#AppTest#0" />
             <element signature="method#emailOnlyfilledCase#0;class#AppTest#0" />
             <element signature="method#passwordOverfilledCase#0;class#AppTest#0" />
+            <element signature="method#wrongCredentialsCase#0;class#AppTest#0" />
+            <element signature="method#forgetPasswordCase#0;class#AppTest#0" />
+            <element signature="method#forgetPasswordCase#1;class#AppTest#0" />
+            <element signature="method#invalidEmailCase#0;class#AppTest#0" />
+            <element signature="method#shortPasswordCase#0;class#AppTest#0" />
+            <element signature="method#invalidCase#0;class#AppTest#0" />
           </folding>
         </state>
       </provider>
