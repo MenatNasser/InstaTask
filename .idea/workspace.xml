@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c105dbef-94bd-479b-a337-6ff1935a9dea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/instabug/Base/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/instabug/Pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/instabug/LoginPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/instabug/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/instabug/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/instabug/LoginPageTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,10 +16,13 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="165">
+                <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -31,51 +30,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/instabug/LoginPageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-645">
-              <caret line="24" column="45" lean-forward="true" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+            <state relative-caret-position="375">
+              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#setUp#0;class#LoginPageTest#0" />
                 <element signature="method#successFullLoginWithCredentialsCase#0;class#LoginPageTest#0" />
-                <element signature="e#2011#2012#0" expanded="true" />
-                <element signature="e#2063#2064#0" expanded="true" />
+                <element signature="method#emailOnlyFilledCase#0;class#LoginPageTest#0" />
+                <element signature="method#passwordOverfilledCase#0;class#LoginPageTest#0" />
+                <element signature="method#wrongCredentialsCase#0;class#LoginPageTest#0" />
                 <element signature="method#forgetPasswordCase#0;class#LoginPageTest#0" />
                 <element signature="method#signUpCase#0;class#LoginPageTest#0" />
                 <element signature="method#invalidEmailCase#0;class#LoginPageTest#0" />
                 <element signature="method#shortPasswordCase#0;class#LoginPageTest#0" />
                 <element signature="method#invalidCase#0;class#LoginPageTest#0" />
+                <element signature="method#tearDown#0;class#LoginPageTest#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/instabug/Base/BaseTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#860#861#0" expanded="true" />
-                <element signature="e#917#918#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Config.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="40" lean-forward="true" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/instabug/Pages/LoginPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="6" column="28" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -99,6 +69,7 @@
         <option value="$PROJECT_DIR$/src/test/java/com/instabug/AppTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/instabug/Base/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/instabug/Pages/LoginPage.java" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/test/java/com/instabug/LoginPageTest.java" />
       </list>
     </option>
@@ -152,15 +123,6 @@
               <item name="InstaTask" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="instabug" type="462c0819:PsiDirectoryNode" />
-              <item name="Pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="loginTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InstaTask" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -194,7 +156,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557410640638" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557412262963" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -235,22 +197,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.invalidEmailCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="InstaTask" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.instabug.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.instabug" />
-      <option name="MAIN_CLASS_NAME" value="com.instabug.AppTest" />
-      <option name="METHOD_NAME" value="invalidEmailCase" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="AppTest.specialCharsCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="InstaTask" />
       <extension name="coverage">
@@ -262,22 +208,6 @@
       <option name="PACKAGE_NAME" value="com.instabug" />
       <option name="MAIN_CLASS_NAME" value="com.instabug.AppTest" />
       <option name="METHOD_NAME" value="specialCharsCase" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AppTest.successFullLoginWithCredentialsCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="InstaTask" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.instabug.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.instabug" />
-      <option name="MAIN_CLASS_NAME" value="com.instabug.AppTest" />
-      <option name="METHOD_NAME" value="successFullLoginWithCredentialsCase" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -298,13 +228,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginPageTest.onlyPasswordCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InstaTask" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.instabug.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.instabug" />
+      <option name="MAIN_CLASS_NAME" value="com.instabug.LoginPageTest" />
+      <option name="METHOD_NAME" value="onlyPasswordCase" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginPageTest.successFullLoginWithCredentialsCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InstaTask" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.instabug.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.instabug" />
+      <option name="MAIN_CLASS_NAME" value="com.instabug.LoginPageTest" />
+      <option name="METHOD_NAME" value="successFullLoginWithCredentialsCase" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.LoginPageTest" />
+        <item itemvalue="JUnit.LoginPageTest.successFullLoginWithCredentialsCase" />
+        <item itemvalue="JUnit.LoginPageTest.onlyPasswordCase" />
         <item itemvalue="JUnit.AppTest.specialCharsCase" />
         <item itemvalue="JUnit.AppTest" />
-        <item itemvalue="JUnit.AppTest.invalidEmailCase" />
-        <item itemvalue="JUnit.AppTest.successFullLoginWithCredentialsCase" />
       </list>
     </recent_temporary>
   </component>
@@ -318,44 +280,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557327199164</updated>
-      <workItem from="1557327203391" duration="14609000" />
+      <workItem from="1557327203391" duration="16287000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppTest - 2019.05.08 at 22h 45m 51s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_wrongCredentialsCase - 2019.05.08 at 22h 48m 14s.xml">
-      <configuration name="AppTest.wrongCredentialsCase" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_wrongCredentialsCase - 2019.05.08 at 22h 50m 57s.xml">
-      <configuration name="AppTest.wrongCredentialsCase" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_successFullLoginWithCredentialsCase - 2019.05.08 at 22h 53m 19s.xml">
-      <configuration name="AppTest.successFullLoginWithCredentialsCase" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_successFullLoginWithCredentialsCase - 2019.05.08 at 22h 57m 18s.xml">
-      <configuration name="AppTest.successFullLoginWithCredentialsCase" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_successFullLoginWithCredentialsCase - 2019.05.08 at 23h 00m 33s.xml">
-      <configuration name="AppTest.successFullLoginWithCredentialsCase" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest - 2019.05.08 at 23h 09m 00s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_invalidEmailCase - 2019.05.08 at 23h 32m 03s.xml">
-      <configuration name="AppTest.invalidEmailCase" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AppTest - 2019.05.09 at 01h 26m 01s.xml">
       <configuration name="AppTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="AppTest_specialCharsCase - 2019.05.09 at 01h 38m 02s.xml">
       <configuration name="AppTest.specialCharsCase" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LoginPageTest - 2019.05.09 at 16h 05m 23s.xml">
+      <configuration name="LoginPageTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoginPageTest_successFullLoginWithCredentialsCase - 2019.05.09 at 16h 15m 18s.xml">
+      <configuration name="LoginPageTest.successFullLoginWithCredentialsCase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoginPageTest_successFullLoginWithCredentialsCase - 2019.05.09 at 16h 16m 27s.xml">
+      <configuration name="LoginPageTest.successFullLoginWithCredentialsCase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoginPageTest_onlyPasswordCase - 2019.05.09 at 16h 18m 54s.xml">
+      <configuration name="LoginPageTest.onlyPasswordCase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoginPageTest_successFullLoginWithCredentialsCase - 2019.05.09 at 16h 21m 36s.xml">
+      <configuration name="LoginPageTest.successFullLoginWithCredentialsCase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoginPageTest_successFullLoginWithCredentialsCase - 2019.05.09 at 16h 27m 15s.xml">
+      <configuration name="LoginPageTest.successFullLoginWithCredentialsCase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoginPageTest_successFullLoginWithCredentialsCase - 2019.05.09 at 16h 27m 47s.xml">
+      <configuration name="LoginPageTest.successFullLoginWithCredentialsCase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoginPageTest_successFullLoginWithCredentialsCase - 2019.05.09 at 16h 28m 53s.xml">
+      <configuration name="LoginPageTest.successFullLoginWithCredentialsCase" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14609000" />
+    <option name="totallyTimeSpent" value="16287000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="945" extended-state="0" />
@@ -365,7 +327,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" weight="0.32891566" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -375,7 +337,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -395,43 +357,10 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
           <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/instabug/Base/BaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#860#861#0" expanded="true" />
-            <element signature="e#917#918#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="40" lean-forward="true" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/instabug/Pages/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -454,20 +383,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/instabug/LoginPageTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/instabug/Pages/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-645">
-          <caret line="24" column="45" lean-forward="true" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        <state relative-caret-position="88">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="40" lean-forward="true" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/instabug/Base/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#860#861#0" expanded="true" />
+            <element signature="e#917#918#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="165">
+            <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/instabug/LoginPageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setUp#0;class#LoginPageTest#0" />
             <element signature="method#successFullLoginWithCredentialsCase#0;class#LoginPageTest#0" />
-            <element signature="e#2011#2012#0" expanded="true" />
-            <element signature="e#2063#2064#0" expanded="true" />
+            <element signature="method#emailOnlyFilledCase#0;class#LoginPageTest#0" />
+            <element signature="method#passwordOverfilledCase#0;class#LoginPageTest#0" />
+            <element signature="method#wrongCredentialsCase#0;class#LoginPageTest#0" />
             <element signature="method#forgetPasswordCase#0;class#LoginPageTest#0" />
             <element signature="method#signUpCase#0;class#LoginPageTest#0" />
             <element signature="method#invalidEmailCase#0;class#LoginPageTest#0" />
             <element signature="method#shortPasswordCase#0;class#LoginPageTest#0" />
             <element signature="method#invalidCase#0;class#LoginPageTest#0" />
+            <element signature="method#tearDown#0;class#LoginPageTest#0" />
           </folding>
         </state>
       </provider>
